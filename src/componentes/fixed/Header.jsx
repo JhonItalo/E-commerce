@@ -7,49 +7,53 @@ import { AiOutlineUser } from "react-icons/ai"
 import { IoIosArrowDown } from "react-icons/io"
 import { AiOutlineMenu } from "react-icons/ai"
 //styles
-import { ConteinerHeader } from "./styles/HeaderStyles";
+import { ConteinerHeader, ContentSearch, ContentUserServices, UserServicesItem, Logo, DesignMobile } from "./styles/HeaderStyles";
 
 
 function Header() {
     return (
         <ConteinerHeader>
-            <h1 className="logo">E-commerce</h1>
+            <Logo>E-commerce</Logo>
 
-            <div className="inputSearch">
+            <ContentSearch>
                 <input type="text" placeholder="busque por produto, categoria ou marca..." />
                 <BsSearch />
-            </div>
+            </ContentSearch>
 
-            <div className="userServices">
-                <div className="userServices__item">
+            <ContentUserServices>
+                <UserServicesItem>
                     <FaRegComment />
                     <div>
                         <p>serviços e</p>
                         <strong>atendimento</strong>
                     </div>
                     <IoIosArrowDown />
-                </div>
+                </UserServicesItem>
 
-                <div className="userServices__item">
+                <UserServicesItem>
                     <AiOutlineUser />
                     <div>
                         <p>minha conta e</p>
                         <strong>meus pedidos</strong>
                     </div>
                     <IoIosArrowDown />
-                </div>
+                </UserServicesItem>
+
                 <div className="menu">
                     <AiOutlineMenu />
                 </div>
-                <BsBag />
-            </div>
 
-            <div className="designMobile">
+                <BsBag />
+
+            </ContentUserServices>
+
+            <DesignMobile>
                 <AiOutlineMenu />
-                <h1>E-commerce</h1>
+                <h1 className="logo-mobile">E-commerce</h1>
                 <BsSearch />
-            </div>
-        </ConteinerHeader>
+            </DesignMobile>
+            
+        </ConteinerHeader >
 
 
 

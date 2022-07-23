@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
+
+:root {
+    --azulfosco: #ECEFF5
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -9,7 +14,7 @@ export const GlobalStyle = createGlobalStyle`
 
 }
 body{
-    background: #ECEFF5;
+    background: white;
 }
 @media (max-width: 1025px){
         html{

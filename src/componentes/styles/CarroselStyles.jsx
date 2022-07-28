@@ -11,8 +11,6 @@ export const Carrosel = styled.div`
   gap: ${(props) => props.gap || "3rem"};
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-right: 2rem;
-  //background-color: yellow;
 
   ::-webkit-scrollbar {
     display: none;

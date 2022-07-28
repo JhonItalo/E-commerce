@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
@@ -16,12 +16,20 @@ export const GlobalStyle = createGlobalStyle`
 body{
     background: white;
 }
-@media (max-width: 1025px){
-        html{
-            font-size: 15px;
-        }  
+a{
+    text-decoration: none;
+    color: inherit;
 }
-@media (max-width: 426px){
-    font-size: 13px;
+a:visited{
+    color: inherit;
 }
-`
+a:hover{
+color: inherit;
+}
+a:link{
+    color: inherit;
+}
+a:active{
+    color: inherit;
+}   
+`;

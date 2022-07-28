@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ConteinerOfertasOn = styled.section`
+export const ConteinerExclusivos = styled.section`
   width: 100%;
   margin-bottom: 7rem;
   // border: 1px solid green;
@@ -11,16 +11,8 @@ export const ConteinerOfertasOn = styled.section`
     margin-bottom: 30px;
   }
 `;
-export const CarroselItem = styled.div`
-  picture img {
-    //width: 390px;
-    //height: 340px;
-    border-radius: 2%;
-  }
-`;
-
 export const Link = styled.a`
-  //width: 30%;
+  width: 33%;
   flex: none;
   text-decoration: none;
   :visited {
@@ -34,5 +26,14 @@ export const Link = styled.a`
   }
   :link {
     color: inherit;
+  }
+`;
+
+export const CarroselItem = styled.div`
+  width: 100%;
+
+  picture img {
+    width: 100%;
+    border-radius: 2%;
   }
 `;

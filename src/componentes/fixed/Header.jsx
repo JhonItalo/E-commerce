@@ -1,63 +1,78 @@
-
+import { Link } from "react-router-dom";
 //icons
-import { BsBag } from "react-icons/bs"
-import { BsSearch } from "react-icons/bs"
-import { FaRegComment } from "react-icons/fa"
-import { AiOutlineUser } from "react-icons/ai"
-import { IoIosArrowDown } from "react-icons/io"
-import { AiOutlineMenu } from "react-icons/ai"
+import { BsBag } from "react-icons/bs";
+import { BsSearch } from "react-icons/bs";
+import { FaRegComment } from "react-icons/fa";
+import { AiOutlineUser } from "react-icons/ai";
+import { IoIosArrowDown } from "react-icons/io";
+import { AiOutlineMenu } from "react-icons/ai";
 //styles
-import { ConteinerHeader, ContentSearch, ContentUserServices, UserServicesItem, Logo, DesignMobile } from "./styles/HeaderStyles";
-
+import {
+  ConteinerHeader,
+  Content,
+  ConteinerBusca,
+  ConteinerServicos,
+  ContentItens,
+  Carrinho,
+  DesignMobile,
+} from "./styles/HeaderStyles";
 
 function Header() {
-    return (
-        <ConteinerHeader>
-            <Logo>E-commerce</Logo>
+  return (
+    <ConteinerHeader>
+      <Content>
+        <div className="menu">
+          <AiOutlineMenu />
+        </div>
 
-            <ContentSearch>
-                <input type="text" placeholder="busque por produto, categoria ou marca..." />
-                <BsSearch />
-            </ContentSearch>
+        <div className="logo">
+          <Link to="/home">
+            <h1>A&C</h1>
+          </Link>
+        </div>
 
-            <ContentUserServices>
-                <UserServicesItem>
-                    <FaRegComment />
-                    <div>
-                        <p>serviços e</p>
-                        <strong>atendimento</strong>
-                    </div>
-                    <IoIosArrowDown />
-                </UserServicesItem>
+        <ConteinerBusca>
+          <input
+            type="text"
+            placeholder="busque por produto, categoria ou marca..."
+          />
+          <BsSearch />
+        </ConteinerBusca>
 
-                <UserServicesItem>
-                    <AiOutlineUser />
-                    <div>
-                        <p>minha conta e</p>
-                        <strong>meus pedidos</strong>
-                    </div>
-                    <IoIosArrowDown />
-                </UserServicesItem>
+        <ConteinerServicos>
+          <ContentItens>
+            <FaRegComment />
+            <div>
+              <p>serviçose e</p>
+              <b>atendimento</b>
+            </div>
+            <IoIosArrowDown />
+          </ContentItens>
 
-                <div className="menu">
-                    <AiOutlineMenu />
-                </div>
+          <ContentItens>
+            <AiOutlineUser />
+            <div>
+              <p>minha conta e</p>
+              <b>meus pedidos</b>
+            </div>
+            <IoIosArrowDown />
+          </ContentItens>
 
-                <BsBag />
+          <Carrinho>
+            <a href="dfgg" alt="!hj">
+              <BsBag />
+            </a>
+          </Carrinho>
+        </ConteinerServicos>
 
-            </ContentUserServices>
-
-            <DesignMobile>
-                <AiOutlineMenu />
-                <h1 className="logo-mobile">E-commerce</h1>
-                <BsSearch />
-            </DesignMobile>
-            
-        </ConteinerHeader >
-
-
-
-    );
+        <DesignMobile>
+          <AiOutlineMenu />
+          <h1 className="logo-mobile">E-commerce</h1>
+          <BsSearch />
+        </DesignMobile>
+      </Content>
+    </ConteinerHeader>
+  );
 }
 
 export default Header;

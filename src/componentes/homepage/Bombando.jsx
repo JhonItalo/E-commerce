@@ -1,7 +1,7 @@
 //styles
 import { ConteinerBombando, CarroselItem, Link } from "./styles/Bombandostyles";
 //componentes
-import CarroselGeneric from "./CarroselGeneric";
+import CarroselGeneric from "../CarroselGeneric";
 //assets
 import black from "../../assets/black.png";
 import man from "../../assets/men.png";

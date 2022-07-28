@@ -3,9 +3,8 @@ import styled from "styled-components";
 export const ConteinerBombando = styled.section`
   width: 100%;
   margin-top: 25px;
-  position: relative;
   margin-bottom: 7rem;
-  overflow: hidden;
+  //border: 1px solid green;
 
   h2 {
     font-size: 2rem;
@@ -38,6 +37,6 @@ export const CarroselItem = styled.div`
   picture img {
     width: 100%;
     flex: none;
-    border-radius: 15%;
+    border-radius: 10%;
   }
 `;
